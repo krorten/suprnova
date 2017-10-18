@@ -28,11 +28,11 @@ Also, add the `Suprnova` facade to the `aliases` array in your `app` configurati
 You need to set the type of coin before you can retreive any info. And also the API Key found in your account
 ```php
 //Get user(wallet addr) general summary
-Suprnova::setType('zec')->setApiKey('')->user($wallet_address);
+Suprnova::setType('zec')->setApiKey('')->user();
 ```
 ```php
 //Get list of workers with connected to user(wallet addr)
-Suprnova::setType('eth')->setApiKey('')->workers($wallet_address);
+Suprnova::setType('eth')->setApiKey('')->workers();
 
 //Other actions to use
 ->hashrate

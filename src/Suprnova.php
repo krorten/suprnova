@@ -1,9 +1,9 @@
 <?php
-namespace Krorten\Nanopool;
+namespace Krorten\Suprnova;
 
 use GuzzleHttp\Client;
 
-class Nanopool {
+class Suprnova {
 
 	const API = "suprnova.cc/?page=api";
 
