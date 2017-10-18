@@ -1,0 +1,22 @@
+{
+    "name": "krorten/suprnova",
+    "description": "Suprnova.cc api wrapper for Laravel 5.5",
+    "keywords": ["laravel", "suprnova", "bitcoin", "altcoin"] ,
+    "homepage": "https://github.com/krorten/suprnova",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kai Rune Orten",
+            "email": "krorten@gmail.com"
+        }        
+    ],
+    "require": {
+        "laravel/framework": ">=5.5.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Krorten\\Suprnova\\" : "src/"
+        }
+    }
+}
