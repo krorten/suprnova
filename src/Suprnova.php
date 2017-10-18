@@ -86,7 +86,7 @@ class Suprnova {
 		$params = http_build_query($params);
 		$params .= '&api_key=' . $this->apikey;
 
-		$request = $client->request('GET', 'https://' . $this->type . '.' . self::API  . '/index.php?action=' . $endpoint . $params);
+		$request = $client->request('GET', 'https://' . $this->type . '.' . self::API  . '/index.php?page=api&action=' . $endpoint . $params);
 		$response = $request->getBody();
 		return json_decode($response->getContents());
 	}
