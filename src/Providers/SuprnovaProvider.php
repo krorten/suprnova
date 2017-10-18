@@ -24,7 +24,7 @@ class SuprnovaProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Nanopool', function () {
+        $this->app->bind('Suprnova', function () {
             return new Suprnova();
         });
     }
