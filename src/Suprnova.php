@@ -5,7 +5,7 @@ use GuzzleHttp\Client;
 
 class Suprnova {
 
-	const API = "suprnova.cc/?page=api";
+	const API = "suprnova.cc/";
 
 	protected $type = 'zec';
 
