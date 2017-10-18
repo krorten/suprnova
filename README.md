@@ -14,14 +14,14 @@ After installing, register the `Krorten\Suprnova\Providers\CryptocompProvider` i
 'providers' => [
     // Other service providers...
 
-    Krorten\Suprnova\Providers\NanopoolProvider::class,
+    Krorten\Suprnova\Providers\SuprnovaProvider::class,
 ],
 ```
 
 Also, add the `Suprnova` facade to the `aliases` array in your `app` configuration file:
 
 ```php
-'Suprnova' => Krorten\Suprnova\Facades\NanopoolFacade::class,    
+'Suprnova' => Krorten\Suprnova\Facades\SuprnovaFacade::class,    
 ```
 
 ### Examples
