@@ -1,7 +1,7 @@
 # Suprnova
 Laravel wrapper for Suprnova API
 
-**Nanopool** is a Suprnova api wrapper for Laravel 5.5
+**Suprnova** is a Suprnova api wrapper for Laravel 5.5
 
 ## Install
 
