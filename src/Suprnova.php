@@ -29,7 +29,7 @@ class Suprnova {
 	 * @param  [type] $user [description]
 	 * @return [type]       [description]
 	 */
-	public function user($adress)
+	public function user()
 	{
 		return $this->request('getuserstatus');
 	}
@@ -38,7 +38,7 @@ class Suprnova {
 	 * @param  [type] $adress [description]
 	 * @return [type]         [description]
 	 */
-	public function workers($adress)
+	public function workers()
 	{
 		return $this->request('getcurrentworkers');
 	}
@@ -47,7 +47,7 @@ class Suprnova {
 	 * @param  [type] $adress [description]
 	 * @return [type]         [description]
 	 */
-	public function balance($adress)
+	public function balance()
 	{
 		return $this->request('getuserbalance');
 	}
@@ -56,7 +56,7 @@ class Suprnova {
 	 * @param  [type] $adress [description]
 	 * @return [type]         [description]
 	 */
-	public function hashrate($adress)
+	public function hashrate()
 	{
 		return $this->request('getusersharerate');
 	}	
@@ -65,7 +65,7 @@ class Suprnova {
 	 * @param  [type] $adress [description]
 	 * @return [type]         [description]
 	 */
-	public function dashboard($adress)
+	public function dashboard()
 	{
 		return $this->request('getdashboarddata');
 	}
@@ -74,7 +74,7 @@ class Suprnova {
 	 * @param  [type] $hashrate [description]
 	 * @return [type]           [description]
 	 */
-	public function transactions($hashrate)
+	public function transactions()
 	{
 		return $this->request('getusertransactions');
 	}
