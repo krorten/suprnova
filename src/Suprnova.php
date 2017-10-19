@@ -5,7 +5,7 @@ use GuzzleHttp\Client;
 
 class Suprnova {
 
-	const API = "suprnova.cc/";
+	const API = "suprnova.cc";
 
 	protected $type = 'zec';
 
@@ -31,7 +31,7 @@ class Suprnova {
 	 */
 	public function user()
 	{
-		return $this->request('getuserstatus');
+		return $this->request('getuserstatus')->getuserstatus;
 	}
 	/**
 	 * Get workers from current adress
@@ -40,7 +40,7 @@ class Suprnova {
 	 */
 	public function workers()
 	{
-		return $this->request('getcurrentworkers');
+		return $this->request('getuserworkers')->getuserworkers;
 	}
 	/**
 	 * Get current balance
@@ -49,7 +49,7 @@ class Suprnova {
 	 */
 	public function balance()
 	{
-		return $this->request('getuserbalance');
+		return $this->request('getuserbalance')->getuserbalance;
 	}
 	/**
 	 * Getting curring Hashrate in Mh/s
@@ -58,7 +58,7 @@ class Suprnova {
 	 */
 	public function hashrate()
 	{
-		return $this->request('getusersharerate');
+		return $this->request('getusersharerate')->getusersharerate;
 	}	
 	/**
 	 * Get Dashboarddata
@@ -67,7 +67,7 @@ class Suprnova {
 	 */
 	public function dashboard()
 	{
-		return $this->request('getdashboarddata');
+		return $this->request('getdashboarddata')->getdashboarddata;
 	}
 	/**
 	 * Get user transactions
@@ -76,13 +76,13 @@ class Suprnova {
 	 */
 	public function transactions()
 	{
-		return $this->request('getusertransactions');
+		return $this->request('getusertransactions')->getusertransactions;
 	}
 
 	private function request($endpoint, $params = array())
 	{
 		$client = new Client();
-		
+
 		$params = http_build_query($params);
 		$params .= '&api_key=' . $this->apikey;
 
